@@ -1,5 +1,4 @@
 import 'order_detail_entity.dart';
-import 'promotion_entity.dart';
 
 class OrderEntity {
   final List<OrderDetailEntity> orderDetails;

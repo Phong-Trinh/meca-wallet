@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_application_2/domain/bloc/order/order_bloc.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BottomChangeOrderMethod extends StatelessWidget {
   final int orderMethodId;

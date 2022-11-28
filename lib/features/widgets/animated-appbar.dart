@@ -50,7 +50,7 @@ class AnimatedAppBar extends StatelessWidget {
                   actions: <Widget>[
                     SizedBox(width: 12),
                     Icon(
-                      size: 26,
+                      size: 24,
                       Icons.person_outline_rounded,
                       color: iconTween.value,
                     ),

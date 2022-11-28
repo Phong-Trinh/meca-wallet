@@ -83,7 +83,7 @@ class _DetailBranchScreenState extends State<DetailBranchScreen> {
                         BranchInfor(cardItem: widget.cardItem),
                         //SizedBox(height: 36),
                         //PointHolder(cardItem: widget.cardItem),
-                        SizedBox(height: 36),
+                        SizedBox(height: 20),
                         OrderShortcut(),
                         SizedBox(height: 36),
                         PromotionShortcut(),

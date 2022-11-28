@@ -9,7 +9,6 @@ import 'features/home/home_screen.dart';
 import 'features/qr_scan/qr_scan.dart';
 import 'features/widgets/animated-appbar.dart';
 import 'features/widgets/outstanding_branchs.dart';
-import 'features/widgets/utilities-banner.dart';
 import 'infrastructure/repository/user_card_repository.dart';
 
 void main() {
@@ -160,72 +159,61 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                             child: OutstandingBranchs()),
                       ],
                     ),
-                    FractionallySizedBox(
-                        widthFactor: 0.92,
-                        child: Container(
-                            margin: EdgeInsets.only(top: 20),
-                            height: 112,
-                            decoration: BoxDecoration(
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey.withOpacity(0.5),
-                                    spreadRadius: 1,
-                                    blurRadius: 1, // changes position of shadow
-                                  )
-                                ],
-                                color: Colors.white,
-                                borderRadius: BorderRadius.all(Radius.circular(
-                                        5.0) //                 <--- border radius here
-                                    )),
-                            child: InkWell(
-                                onTap: () {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => const QRViewScreen(),
-                                  ));
-                                },
-                                child: Container(
-                                    child: Row(
-                                  children: [
-                                    const SizedBox(width: 16),
-                                    Icon(Icons.qr_code_scanner_rounded,
-                                        size: 76,
-                                        color:
-                                            Color.fromRGBO(52, 51, 51, 0.816)),
-                                    const VerticalDivider(
-                                      indent: 16,
-                                      endIndent: 16,
-                                      width: 32,
-                                      color: Color.fromRGBO(52, 51, 51, 0.816),
-                                      thickness: 1,
-                                    ),
-                                    Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          SizedBox(height: 8),
-                                          Row(children: [
-                                            Text('QR CODE',
-                                                style: TextStyle(
-                                                    letterSpacing: 1.8,
-                                                    fontSize: 24,
-                                                    fontWeight:
-                                                        FontWeight.w700))
-                                          ]),
-                                          SizedBox(height: 12),
-                                          SizedBox(
-                                            width: 200,
-                                            child: Text(
-                                                'Thêm thẻ thành viên - Nhận thật nhiều khuyến mãi',
-                                                style: TextStyle(
-                                                    height: 1.3,
-                                                    color: Color.fromRGBO(
-                                                        52, 51, 51, 0.816),
-                                                    fontWeight:
-                                                        FontWeight.w500)),
-                                          ),
-                                        ])
-                                  ],
-                                )))))
+                    Container(
+                        margin: EdgeInsets.only(top: 70),
+                        height: 112,
+                        decoration: BoxDecoration(color: Colors.white),
+                        child: InkWell(
+                            onTap: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => const QRViewScreen(),
+                              ));
+                            },
+                            child: Container(
+                                child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                const SizedBox(width: 16),
+                                Icon(Icons.qr_code_scanner_rounded,
+                                    size: 70,
+                                    color: Color.fromRGBO(52, 51, 51, 0.816)
+                                        .withOpacity(0.7)),
+                                const VerticalDivider(
+                                  indent: 20,
+                                  endIndent: 20,
+                                  width: 40,
+                                  color: Color.fromARGB(208, 99, 98, 98),
+                                  thickness: 1,
+                                ),
+                                Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(height: 15),
+                                      Row(children: [
+                                        Text('Meca Wallet',
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                        255, 64, 27, 144)
+                                                    .withOpacity(0.8),
+                                                letterSpacing: 0.94,
+                                                fontSize: 24,
+                                                fontWeight: FontWeight.w700))
+                                      ]),
+                                      SizedBox(height: 5),
+                                      SizedBox(
+                                        width: 200,
+                                        child: Text(
+                                            'Thêm thẻ thành viên - Nhận thật nhiều khuyến mãi',
+                                            style: TextStyle(
+                                                height: 1.3,
+                                                color: Color.fromRGBO(
+                                                    52, 51, 51, 0.816),
+                                                fontWeight: FontWeight.w500)),
+                                      ),
+                                    ])
+                              ],
+                            ))))
                   ]),
                   HomeScreen()
                 ],

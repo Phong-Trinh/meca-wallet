@@ -26,9 +26,6 @@ class HomeScreen extends StatelessWidget {
                         textAlign: TextAlign.start,
                       )),
                   Container(
-                      margin: const EdgeInsets.only(top: 6),
-                      child: const Text('Thêm thẻ thành viên')),
-                  Container(
                       margin: const EdgeInsets.only(top: 8),
                       child: CardsHolder()),
                   Container(

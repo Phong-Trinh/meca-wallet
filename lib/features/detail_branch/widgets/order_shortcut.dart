@@ -20,13 +20,6 @@ class OrderShortcut extends StatelessWidget {
             },
         child: Container(
             height: 114,
-            decoration: BoxDecoration(
-              border: Border.all(
-                  color: const Color.fromARGB(255, 146, 144, 144), width: 1.0),
-              borderRadius: const BorderRadius.all(Radius.circular(
-                      20.0) //                 <--- border radius here
-                  ),
-            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -44,7 +37,7 @@ class OrderShortcut extends StatelessWidget {
                   ],
                 ),
                 const VerticalDivider(
-                    thickness: 2.4, indent: 12, endIndent: 12),
+                    thickness: 2.4, indent: 20, endIndent: 20, width: 20),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

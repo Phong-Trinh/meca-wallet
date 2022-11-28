@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/domain/bloc/menu/menu_bloc.dart';
 import 'package:flutter_application_2/infrastructure/repository/menu_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../domain/bloc/menu/menu_event.dart';
-import '../../domain/bloc/menu/menu_state.dart';
 import '../widgets/receipt_shortcut/receipt_shortcut.dart';
 import 'widgets/menu_holder.dart';
 import 'widgets/order_appbar.dart';
